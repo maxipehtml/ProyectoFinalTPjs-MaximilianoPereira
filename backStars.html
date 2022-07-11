@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>copy of StarsField</title>
+    <title>new project</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-    
+    <meta itemprop="name" content="{projectName}">
+    <meta itemprop="description" content="made with cables">
+    <meta itemprop="image" content="screenshot.png">
+    <meta name="description" content="made with cables" />
 
     <style>
         body {
@@ -32,13 +35,31 @@
             user-select: none;
         }
 
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            padding: 20px;
+            text-align: right;
+            font-size: 18px;
+            color: var(--highlight-color);
+        }
 
+        footer a,
+        footer a:hover,
+        footer a:active {
+            color: var(--highlight-color);
+        }
     </style>
 
 </head>
 
 <body>
     <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
+
+    
     <script type="text/javascript" src="./jsStars/patch.js" async></script>
     
 
